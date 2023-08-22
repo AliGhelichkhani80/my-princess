@@ -4,15 +4,23 @@
 /* General */
 * {
   margin: 0;
+  scroll-behavior: smooth;
+}
+head icon {
+  background-color: white;
 }
 body {
   display: flex;
   flex-direction: column;
+  gap: 0;
   padding-top: 120px;
-  height: 3000px;
+  background-color: rgb(255, 255, 255);
 }
 .hero,
-.main {
+.main,
+.quote-section,
+.CallToAction-section,
+footer {
   font-family: Caveat, arial;
 }
 /* Header */
@@ -76,7 +84,7 @@ audio::-webkit-media-controls-panel:hover {
   display: flex;
   justify-content: center;
   gap: 100px;
-  padding: 20px 160px;
+  padding: 70px 160px;
 }
 .hero div {
   min-width: 510px;
@@ -100,7 +108,7 @@ audio::-webkit-media-controls-panel:hover {
   cursor: cell;
   margin-bottom: -5px;
 }
-.hero button {
+button {
   margin-top: 22px;
   padding: 10px 12px;
   background-color: rgb(0, 186, 199);
@@ -113,12 +121,12 @@ audio::-webkit-media-controls-panel:hover {
   cursor: pointer;
   transition: background-color 0.2s, color 0.2s, border-color 0.2s;
 }
-.hero button:hover {
+button:hover {
   background-color: rgb(0, 133, 143);
   color: white;
   border-color: rgb(0, 186, 199);
 }
-.hero button:active {
+button:active {
   opacity: 0.8;
   margin-top: 24px;
   margin-left: 2px;
@@ -132,7 +140,6 @@ audio::-webkit-media-controls-panel:hover {
   padding: 20px 160px 40px 160px;
   background-color: rgb(0, 133, 143);
   color: black;
-  max-height: 464px;
 }
 .main h2 {
   font-size: 38px;
@@ -152,7 +159,6 @@ audio::-webkit-media-controls-panel:hover {
   flex-direction: column;
   align-items: center;
   justify-content: start;
-  height: 418px;
   width: 210px;
 }
 
@@ -186,4 +192,91 @@ audio::-webkit-media-controls-panel:hover {
   font-weight: 600;
   line-height: 22px;
   margin-top: 14px;
+}
+
+/* Quote Section */
+.quote-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 160px;
+  background-color: rgb(226, 226, 226);
+}
+.quote {
+  font-size: 60px;
+  font-weight: bold;
+  margin-top: 100px;
+}
+.quote-section div {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+
+  width: 100%;
+  margin-top: 30px;
+}
+.quote-section div p {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 100px;
+}
+
+/* Call to Action section */
+.CallToAction-section {
+  padding: 100px 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.CallToAction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 280px;
+  background-color: rgb(0, 186, 199);
+  padding: 30px 100px;
+  border: 6px solid rgb(0, 133, 143);
+  border-radius: 20px;
+}
+.CallToAction button {
+  margin: 0;
+}
+
+.CallToAction .subtext-header {
+  margin-top: 0;
+  margin-bottom: -10px;
+}
+
+.CallToAction button {
+  padding: 10px 12px;
+  background-color: rgb(0, 186, 199);
+  color: black;
+  font-family: Caveat;
+  font-size: 24px;
+  font-weight: 600;
+  border-radius: 7px;
+  border: 3px solid rgb(0, 133, 143);
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+.CallToAction button:hover {
+  background-color: rgb(0, 133, 143);
+}
+.CallToAction button:active {
+  opacity: 0.8;
+  margin-top: 2px;
+  margin-left: 4px;
+}
+
+/* Footer */
+footer {
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: rgb(0, 133, 143);
 }

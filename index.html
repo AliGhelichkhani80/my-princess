@@ -5,8 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/styles.css" />
     <title>My Princess</title>
+    <script
+      src="https://kit.fontawesome.com/e6d3dcab10.js"
+      crossorigin="anonymous"
+    ></script>
+    <link class="icon" rel="icon" type="image/x-icon" href="./imgs/cyan-heart.png">
   </head>
   <body>
+    
     <header class="header">
       <div class="logo">
         <p>Nastaran</p>
@@ -14,12 +20,12 @@
       <div class="links">
         <ul>
           <li>
-            <audio class="song" controls>
-              <source src="#" />
+            <audio class="song" controls autoplay>
+              <source src="./audio/Familiar Stranger (Reverb).mp3" />
             </audio>
           </li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">About</a></li>
+          <li><a href="#scrollone">About</a></li>
+          <li><a href="#scrolltwo">Contact</a></li>
         </ul>
       </div>
     </header>
@@ -40,7 +46,7 @@
     </section>
 
     <!-- Main Section -->
-    <section class="main">
+    <section id="scrollone" class="main">
       <h2>Reasons Why I Love Her So Much:</h2>
       <div class="info-box-container">
         <div class="info-box">
@@ -65,7 +71,8 @@
           <p class="subtext-header">She's MY Princess:</p>
           <p class="subtext">
             As you can clearly see, not only she looks like a princess but she
-            actually IS one and I strive to treat her as nothing but such	&#128120;
+            actually IS one and I strive to treat her as nothing but such
+            &#128120;
           </p>
         </div>
         <div class="info-box">
@@ -73,7 +80,7 @@
           <p class="subtext-header">Bad Ass:</p>
           <p class="subtext">
             Need I say more? Probably not. Nastaran is a fucking bad ass and
-            every time she farts, burps or anything of the same effect, you just
+            every time she farts, burps or anything of the same effect, I just
             want to hug and kiss the shit out of her &#128143;
           </p>
         </div>
@@ -86,11 +93,32 @@
           </p>
         </div>
       </div>
-
-      <!-- Quote Section -->
-      <section class="quote-section">
-        
-      </section>
     </section>
+
+    <!-- Quote Section -->
+    <section class="quote-section">
+      <p class="quote">Hard to leave, exquisite, the only one I need...</p>
+      <div><p>-A Very Happy, Lucky and Proud Husband</p></div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section id="scrolltwo" class="CallToAction-section">
+      <div class="CallToAction">
+        <div class="">
+          <p class="subtext-header">Check Out Her Instagram</p>
+          <p class="subtext">
+            By clicking the button you can follow Nastaran's Instagram.
+          </p>
+        </div>
+        <a href="./follow.html" target="_blank">
+          <button>Follow</button>
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>Webpage by Ali Ghelichkhani &copy; &trade;</p>
+    </footer>
   </body>
 </html>
